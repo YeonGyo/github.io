@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Your Car</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .nav{
+      height: 70px;
+      border-bottom: 1px solid black; /*   테두리 설정, 메뉴에 줄 그어서 분리 */
+      display: flex; /*       메뉴 가로 정렬 */
+      align-items: center; /*       중앙정렬 */
+    }
+    
+    .nav-right-items {
+      display: flex; /*       메뉴 가로 정렬 */
+      margin-left: auto;  
+    }
+    .nav-item {
+      margin-left: 10px; /*       여백설정 */
+    }
+    .team-name {
+      margin-left: 20px;
+    }
+    .title {
+/*       타이틀 크기 키우고 글씨체 굵게, 중간정렬 */
+      text-align: center;
+      font-size: 60px;
+      font-weight: bold;
+    }
+    .subtitle {
+/*       크기 키우고 너비 설정, 중간정렬 */
+      text-align: center;
+      font-size: 35px;
+      font-weight: 300;
+    }
+    .main{
+/*       너비 설정, 가운데 정렬, 위에 여백 설정 */
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 60px;
+    }
+    .info{
+/*       가로 정렬 */
+      display: flex;
+    }
+
+   .info-item{
+/*      너비, 높이, 테두리, 간격, 박스 모서리 둥글게 설정 */
+     width: 300px;
+     height: 300px;
+     border: 1px solid black;
+     margin: 20px;
+     border-radius: 4px;
+     text-align: center;
+   }
+   .info-item-title {
+     font-size:1.5rem;
+     background: rgba(0,0,0,.03);
+     text-align: center;
+     height: 53px;
+     line-height: 53px;
+     border-bottom: 1px solid black;
+   }
+    .info-item-detail{
+/*       폰트 사이즈, 가운데 정렬 등 설정 */
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      margin-top: 60px;
+    }
+    .info-item-button{
+      padding: .5rem 1rem;
+      font-size: 1.25rem;
+      line-height: 1.5;
+      border-radius: .3rem;
+      color: #007bff;
+      background-color: transparent;
+      background-image: none;
+      border-color: #007bff;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">
+    <div class="team name">
+      Your Car
+    </div>
+    <div class="nav-right-items">
+<!--       배우는 과정에서 알려주길래 나중에 필요할까봐 일단 넣어뒀습니다 -->
+      <div class="nav-item">메뉴1</div>
+      <div class="nav-item">메뉴2</div>
+      <div class="nav-item">메뉴3</div>
+      <div class="nav-item">메뉴4</div>
+    </div>
+   
+  </div>
+  <div class="main">
+    <div class="title">
+      훼손 로드마크
+    </div>
+    <div class="subtitle">
+      훼손된 곳의 사진과 위치, 훼손 정도를 알려줍니다.
+    </div>
+    <div class="info">
+      <div class="info-item">
+        <div class="info-item-title">
+         훼손 부분 사진
+        </div>
+        <div class="info-item-detail">
+          (사진표시)
+        </div>
+        <button class="info-item-button">
+          Click me
+        </button>  
+      </div>
+      <div class="info-item">
+        <div class="info-item-title">
+         훼손 부분 위치 정보
+        </div>
+        <div class="info-item-detail">
+          (위치정보)
+<!--          스프레드시트연동예정 -->
+        </div>
+        <button class="info-item-button">
+          Click me
+        </button>   
+      </div>
+      <div class="info-item">
+        <div class="info-item-title">
+         훼손 정도
+        </div>
+        <div class="info-item-detail">
+          (1-5로 표시)
+        </div>
+        <button class="info-item-button">
+          Click me
+        </button> 
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
