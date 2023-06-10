@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <style>
+    .TeamName {
+      height: 50px;
+      border-bottom: 1px solid black;
+      align-items: center;
+      font-size: 1.5rem;
+
+    }
+
+    .percentage {
+      margin-left: 75%;
+      margin-top: 10px;
+    }
+
+    .title {
+
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    .subtitle {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 300px;
+    }
+
+    .main {
+      margin: 100px;
+      margin-top: 30px;
+      display: flex;
+
+    }
+
+    .sheet {
+      width: 605px;
+      height: 555px;
+      border: 1px solid black;
+      margin: 20px;
+      border-radius: 4px;
+
+    }
+
+    .sheetname {
+      font-size: 1.5rem;
+      background-color: rgba(0, 0, 0, .03);
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      border-bottom: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="TeamName">
+    Your Car
+  </div>
+
+  <div class="top">
+    <div class="percentage">
+      <iframe width="300" height="186" seamless frameborder="0" scrolling="no"
+        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwtJ7eJfcES7hRHmeypnBAlkrWPOWF4riLFeQAQVJ7jZJKBCBtIcVVdmp907DFqiQqbfjyz1LEAfWN/pubchart?oid=560644163&amp;format=interactive"
+        width=100 height=75></iframe>
+    </div>
+    <div class="title">
+      [로드마크]
+    </div>
+    <div class="subtitle">
+      수집한 정보를 표시합니다.
+    </div>
+  </div>
+  <div>
+    <div class="main">
+      <div class="sheet">
+        <div class='sheetname'>
+          Good- 문제가 없다고 판단된 로드마크
+        </div>
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwtJ7eJfcES7hRHmeypnBAlkrWPOWF4riLFeQAQVJ7jZJKBCBtIcVVdmp907DFqiQqbfjyz1LEAfWN/pubhtml?gid=0&amp;single=true&amp;widget=true&amp;headers=false&gid=0&range=A1:C"
+          width=600 height=500></iframe>"
+      </div>
+      <div class="sheet">
+        <div class="sheetname">
+          Bad- 문제가 있다고 판단된 로드마크
+        </div>
+        <iframe
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQwtJ7eJfcES7hRHmeypnBAlkrWPOWF4riLFeQAQVJ7jZJKBCBtIcVVdmp907DFqiQqbfjyz1LEAfWN/pubhtml?gid=1400906431&amp;single=true&amp;widget=true&amp;headers=false&gid=0&range=A1:C"
+          width=600 height=500></iframe>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+    <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
